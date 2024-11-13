@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #FFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #19181B;
+}
+
+.es-review-content-text, .es-review-author-name, .DateTime__Time-sc-13gi7wj-0 {
+  color: #000;
+}
