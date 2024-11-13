@@ -48,7 +48,7 @@ export default function App() {
       <S.Header>
         <S.HeaderTop>
           <S.TextoHeader $fontsize={"28px"}>
-            Encontre o serviço ideal para sua necessidade
+            Serv Hoy - Encontre o serviço ideal para sua necessidade
           </S.TextoHeader>
           <S.TextoHeader $fontsize={"18px"}>
             Entre em contato com o prestador para negociar e agendar o serviço!
