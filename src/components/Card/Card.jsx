@@ -1,6 +1,4 @@
 import { S } from "./Card-styles";
-import { images } from "../../constants/Data";
-import imgWpp from "../../images/wpp.png";
 
 export default function Card({
   nome,
@@ -18,11 +16,11 @@ export default function Card({
     const numero = formataTelefone();
     window.open(`https://wa.me/+55${numero}/?text=Olá!`);
   }
-
+console.log(imagem)
   return (
     <S.Card>
       <S.Titulo>{nome}</S.Titulo>
-      <S.Imagem src={images[imagem]} alt="imagem-servco" />
+      <S.Imagem src={`https://servhoy.s3.sa-east-1.amazonaws.com/fotos/${imagem + 1}.png`} alt="imagem-servco" />
       <S.DadosContato>
         <S.Texto14>{descricao}</S.Texto14>
       </S.DadosContato>
@@ -37,7 +35,7 @@ export default function Card({
       </S.DadosContato>
       <S.Button onClick={openWpp}>
         Entrar em contato
-        <S.IconWpp src={imgWpp} alt="icon-wpp" />
+        <S.IconWpp src="https://servhoy.s3.sa-east-1.amazonaws.com/fotos/wpp.png" alt="icon-wpp" />
       </S.Button>
       <br />
       <S.LinkAgenda
